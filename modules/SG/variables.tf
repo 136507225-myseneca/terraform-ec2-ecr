@@ -17,7 +17,7 @@ variable "instance_sg_ingress" {
       cidr_blocks      = ["0.0.0.0/0"]
       ipv6_cidr_blocks = ["::/0"]
     },
-      {
+    {
       description      = "HTTP from everywhere"
       from_port        = 8082
       to_port          = 8082
@@ -25,7 +25,7 @@ variable "instance_sg_ingress" {
       cidr_blocks      = ["0.0.0.0/0"]
       ipv6_cidr_blocks = ["::/0"]
     },
-     {
+    {
       description      = "HTTP from everywhere"
       from_port        = 8083
       to_port          = 8083
