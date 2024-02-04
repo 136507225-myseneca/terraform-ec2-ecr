@@ -7,7 +7,7 @@ resource "aws_lb" "my_alb" {
   name               = "my-application-load-balancer"
   internal           = false
   load_balancer_type = "application"
-  security_groups    = var.security_groups # Replace with your security group ID
+  security_groups    = var.security_groups                      # Replace with your security group ID
   subnets            = [var.aws_subnet_id, var.aws_subnet_id_2] # Replace with your subnet IDs
 
   enable_deletion_protection = false

@@ -11,6 +11,22 @@ variable "instance_sg_ingress" {
   default = [
     {
       description      = "HTTP from everywhere"
+      from_port        = 80
+      to_port          = 80
+      protocol         = "tcp"
+      cidr_blocks      = ["0.0.0.0/0"]
+      ipv6_cidr_blocks = ["::/0"]
+    },
+    {
+      description      = "HTTP from everywhere"
+      from_port        = 8082
+      to_port          = 8082
+      protocol         = "tcp"
+      cidr_blocks      = ["0.0.0.0/0"]
+      ipv6_cidr_blocks = ["::/0"]
+    },
+    {
+      description      = "HTTP from everywhere"
       from_port        = 8081
       to_port          = 8081
       protocol         = "tcp"
