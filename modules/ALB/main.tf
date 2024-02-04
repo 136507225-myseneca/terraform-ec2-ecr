@@ -42,8 +42,8 @@ resource "aws_lb_listener" "listener" {
     type = "fixed-response"
     fixed_response {
       content_type = "text/plain"
-      message_body = "404 Not Found"
-      status_code  = "404"
+      message_body = "Fixed Static message - for Root Context"
+      status_code  = "200"
     }
   }
 }
